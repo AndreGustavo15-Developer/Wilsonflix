@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS ÚNICO -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="icon" type="image/png" href="assets/wison-flix-icon.png">
+    <title>Wilsonflix</title>
+</head>
+
+<body>
+    <!-- Botton Trailer -->
+    <div class="overlay">
+        <i class="fa-solid fa-times" onclick="closeOverlay();"></i>
+        <div id="movie-trailer"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="menu-left">
+
+            <div class="logo">
+                <img src="assets/wilson.png" alt="Logo Wilsonflix">
+            </div>
+
+            <nav class="main-nav">
+                <!-- To do
+                <div class="search mobile-search">
+                    <input class="input" type="text" placeholder="Search...">
+                    <i class="fa fa-search"></i>
+                </div>
+                -->
+
+                <ul class="menu">
+                    <li><a href="#" data-type="popular">Populares</a></li>
+                    <li><a href="#" data-type="movie">Filmes</a></li>
+                    <li><a href="#" data-type="tv">Series</a></li>
+                    <li><a href="#" data-type="kids">Kids</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- To do
+        <nav class="right-nav">
+            <div class="search">
+                <input class="input" type="text" placeholder="Search...">
+                <i class="fa fa-search"></i>
+            </div>
+        </nav>
+        -->
+        <!-- Menu Mobile -->
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars" id="icon-menu"></i>
+        </button>
+    </header>
+
+    <!--Banner -->
+    <main>
+        <div class="banner">
+            <!--Add swiper-->
+            <div class="overlay-banner"></div>
+            <!-- Slider main container -->
+            <div class="swiper bannerSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+        </div>
+
+        <!--Content -->
+        <div class="content">
+            <div class="title">
+                <div id="title">
+                    <h1><!-- Nome do Filme--></h1> 
+                </div>
+                <div id="sub-title">
+                    <p><!-- Sub title --></p> 
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span></span> <!-- 6.483 -->
+                </div>
+                <div class="buttons">
+                    <button class="btn-sec btn-trailer" onclick="showTrailer();">
+                        <i class="fa-solid fa-play"></i>
+                        Trailer
+                    </button>
+                </div>
+            </div>
+            <div class="desc">
+                <!-- Swiper navigation buttons -->
+                <div class="navigation-btn">
+                    <div class="button-prev"></div>
+                    <div class="button-next"></div>
+                </div>
+                <div id="desc">
+                    <p>
+                        <!--
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Ad nisi ipsa dignissimos tempore modi delectus et odit asperiores
+                        libero! Similique velit cum eveniet sapiente quis, sed non ab ratione
+                        expedita?
+                        -->
+                    </p>
+                </div>
+                <button class="btn-primary">
+                    <i class="fa-solid fa-eye"></i>
+                    Saiba mais
+                </button>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Movies Thumbs -->
+        <div class="thumbs">
+            <div thumbsSlider="" class="swiper thumbsSwiper">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==== Scripts ==== -->
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Arquivos js -->
+    <script src="js/swiper-config.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/ui.js" defer></script>
+</body>
+
+</html>
