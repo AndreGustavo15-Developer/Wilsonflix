@@ -3,3 +3,4 @@ __pycache__/
 .env
 database/wilsonflix.db
 venv/
+database/wilsonflix.db
