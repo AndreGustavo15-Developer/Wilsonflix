@@ -3,7 +3,7 @@ from flask_cors import CORS
 from database import buscar_por_categoria, buscar_por_id, create_tables
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://andregustavo15-developer.github.io"])
 
 create_tables()
 
