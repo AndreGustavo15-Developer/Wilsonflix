@@ -1,5 +1,5 @@
 /* swiper-config.js */
-const API_URL = "https://seu-backend.onrender.com/api";
+const API_URL = "https://andregustavo15.pythonanywhere.com/api";
 
 const bannerWrapper = document.querySelector('.bannerSwiper .swiper-wrapper');
 const thumbsWrapper = document.querySelector('.thumbsSwiper .swiper-wrapper');
