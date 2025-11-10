@@ -1,5 +1,5 @@
 /* swiper-config.js */
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://seu-backend.onrender.com/api";
 
 const bannerWrapper = document.querySelector('.bannerSwiper .swiper-wrapper');
 const thumbsWrapper = document.querySelector('.thumbsSwiper .swiper-wrapper');
