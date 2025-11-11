@@ -74,6 +74,26 @@ No arquivo `swiper-configs.js` certifique de modificar a constante `API_URL` par
 - A aplicação consumirá automaticamente a API rodando localmente em http://localhost:5000/api.
 - Navegue pelas categorias no menu e aproveite os trailers e detalhes.
 
+---
+# Descrição do Fluxo
+
+![Wilsonflix diagram](https://github.com/AndreGustavo15-Developer/Wilsonflix/blob/main/assets/Wilsonflix_diagram.jpg)
+
+1. Usuário interage com o Frontend (clicando categorias, trailers, etc).
+
+2. O Frontend envia requisições HTTP (fetch) para o Backend API para obter dados.
+
+3. O Backend API consulta o banco SQLite local para buscar informações já armazenadas.
+
+4. Se os dados não estiverem atualizados ou disponíveis, o Backend consulta o TMDB API para buscar os dados mais recentes.
+
+5. O Backend armazena/atualiza os dados no banco SQLite para futuras requisições.
+
+6. O Backend retorna a resposta JSON para o Frontend.
+
+7. O Frontend atualiza a interface, exibindo imagens, títulos, sinopses, avaliações e trailers.
+
+8. Periodicamente, o script cron_update.py é executado para atualizar a base de dados SQLite, buscando os dados diretamente do TMDB API, garantindo que o sistema tenha informações atualizadas e evitando chamadas diretas frequentes à API externa durante a navegação.
 
 
 
