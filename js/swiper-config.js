@@ -79,7 +79,7 @@ async function carregarDetalhesFilme(id) {
 
     window.movieTrailerURL = filme.trailer;
 
-    // Botão Trailer ✅
+    // Botão Trailer
     const btnTrailer = document.querySelector('.btn-trailer');
     if (filme.trailer) {
       btnTrailer.style.display = 'inline-block';
@@ -90,7 +90,7 @@ async function carregarDetalhesFilme(id) {
       btnTrailer.style.display = 'none';
     }
 
-    // Botão Saiba Mais ✅
+    // Botão Saiba Mais
     const btnSaibaMais = document.querySelector(".btn-primary");
     btnSaibaMais.onclick = () => {
       window.open(`https://www.themoviedb.org/movie/${filme.id}?language=pt-br`, "_blank");
