@@ -17,7 +17,7 @@ Wilsonflix é uma aplicação web para exibir filmes, séries e conteúdo infant
 - Listagem de mídias por categoria (Populares, Filmes, Séries, Kids).  
 - Exibição de detalhes completos (título, sinopse, gêneros, avaliação, trailer).  
 - Navegação fácil via menu e sliders com thumbnails.  
-- Trailer em overlay e botão “Saiba Mais” para abrir página no TMDB.  
+- Trailer e botão “Saiba Mais” para abrir página no TMDB.  
 - Atualização periódica dos dados do TMDB para manter a base atualizada.  
 
 ---
@@ -69,7 +69,7 @@ No arquivo `swiper-configs.js` certifique de modificar a constante `API_URL` par
 
 - Abra o arquivo index.html no navegador (ou sirva via servidor web local).
 - A aplicação consumirá automaticamente a API rodando localmente em http://localhost:5000/api.
-- Navegue pelas categorias no menu e aproveite os trailers e detalhes.
+- Navegue pelas categorias no menu.
 
 ---
 # Descrição do Fluxo
@@ -91,16 +91,3 @@ No arquivo `swiper-configs.js` certifique de modificar a constante `API_URL` par
 7. O Frontend atualiza a interface, exibindo imagens, títulos, sinopses, avaliações e trailers.
 
 8. Periodicamente, o script cron_update.py é executado para atualizar a base de dados SQLite, buscando os dados diretamente do TMDB API, garantindo que o sistema tenha informações atualizadas e evitando chamadas diretas frequentes à API externa durante a navegação.
-
-
-
-
-
-
-
-
-
-
-
-
-
