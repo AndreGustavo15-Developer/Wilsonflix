@@ -62,10 +62,7 @@ Wilsonflix é uma aplicação web para exibir filmes, séries e conteúdo infant
       python app.py
       ```
 O backend estará disponível em `http://localhost:5000/api.`
-No arquivo `swiper-configs.js` certifique de modificar a constante `API_URL` para:
-      ```bash
-      const API_URL = "http://localhost:5000/api";
-      ```
+No arquivo `swiper-configs.js` certifique de modificar a constante `API_URL` para: `const API_URL = "http://localhost:5000/api";`
       
 ---
 ## Como usar o frontend
